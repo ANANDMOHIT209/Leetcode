@@ -17,7 +17,6 @@ public:
 
     int lh =max(0, findMaxPathSum(root->left, maxi));
     int rh = max(0, findMaxPathSum(root->right, maxi));
-    int temp= max(max(lh,rh)+root->val,root->val);
     maxi= max(maxi,root->val+lh+rh);
     return max(lh,rh)+root->val;
     }
