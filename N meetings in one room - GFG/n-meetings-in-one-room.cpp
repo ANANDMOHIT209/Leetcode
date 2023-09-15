@@ -11,7 +11,7 @@ class Solution
     bool static comp(pair<pair<int,int>,int> a, pair<pair<int,int>,int> b){
         if(a.first.second<b.first.second) return true;
         else if(a.first.second>b.first.second) return false;
-        else if(a.second<b.second) return true;
+        // else if(a.second<b.second) return true;
         else return false;
     }
     int maxMeetings(int start[], int end[], int n)
